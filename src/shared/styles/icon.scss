@@ -1,0 +1,14 @@
+.ev-plan-choice__icon {
+  &__main-container {
+  }
+  &__icon-wrapper {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.2rem;
+  }
+  &__circular {
+    border-radius: 50%;
+  }
+}

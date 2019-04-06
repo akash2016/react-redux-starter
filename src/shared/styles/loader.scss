@@ -1,0 +1,15 @@
+.ev-plan-choice {
+  &__loader {
+    display: inline-flex;
+    animation: spinner 2s infinite linear;
+  }
+}
+
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

@@ -1,0 +1,36 @@
+@import "../../colors";
+.ev-plan-choice__button {
+  &__main-container {
+    padding: 1rem;
+    outline: none;
+    border: none;
+    font-size: 1.6rem;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  &__pill-appearance {
+    border-radius: 2rem;
+    background-color: $primary-background;
+    color: $primary-text;
+    box-shadow: 0 0 3px rgba(0, 10, 35, 0.35);
+    transition: all 0.2s ease-in;
+  }
+  &__primary-appearance {
+    background-color: $button-primary-background;
+    border-radius: 1rem;
+    color: $button-primary-text;
+  }
+  &__normal-appearance {
+    background-color: $button-normal-background;
+    color: $primary-text;
+    border-radius: 1rem;
+  }
+  &__selected-appearance {
+    background-color: $button-selected-background;
+    border-radius: 2rem;
+    color: $button-selected-text;
+    box-shadow: 0 0 3px rgba(0, 10, 35, 0.35);
+    transition: all 0.2s ease-in;
+  }
+}

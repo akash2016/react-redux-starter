@@ -1,0 +1,13 @@
+@import "../../colors";
+.ev-plan-choice__header {
+  &__main-container {
+    height: 4em;
+    background-color: $primary-background;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    box-shadow: 00px 3px 5px rgba(0, 10, 35, 0.35);
+  }
+}
