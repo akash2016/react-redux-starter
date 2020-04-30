@@ -1,0 +1,23 @@
+name: Campaigns Frontend Actions suite
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+
+jobs:
+  test:
+    name: campaigns-frontend-test-cases
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }
+    - name: Set Registry
+      run: npm config set registry="http://mac-build-server.dev.evivehealth.com:4000/"   
+    - name: Install dependencies
+      run: npm install
+    - name: Running Test
+      run: npm start:test
